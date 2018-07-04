@@ -1,21 +1,35 @@
 package io.github.l4ttice.quakereport
 
-class QuakeData(Magnitude : Float, Location : String, Time : String){
+class QuakeData(Magnitude: Double, Location1: String, Location2: String, Time1: String, Time2: String, URL: String) {
 
-    private var mQuakeMagnitude : Float = Magnitude
-    private var mQuakeTime : String = Time
-    private var mQuakeLocation : String = Location
+    private var mQuakeMagnitude: Double = Magnitude
+    private var mQuakeTime1: String = Time1
+    private var mQuakeTime2: String = Time2
+    private var mQuakeLocation1: String = Location1
+    private var mQuakeLocation2: String = Location2
+    private var mQuakeDetailsPage: String = URL
 
-    fun getQuakeMagnitude() : Float{
+    fun getQuakeMagnitude(): Double {
         return mQuakeMagnitude
     }
 
-    fun getQuakeTime() : String {
-        return mQuakeTime
+    fun getQuakeTime1(): String {
+        return mQuakeTime1
     }
 
-    fun getQuakeLocation() : String{
-        return mQuakeLocation
+    fun getQuakeTime2(): String {
+        return mQuakeTime2
     }
 
+    fun getQuakeLocation1(): String {
+        return mQuakeLocation1
+    }
+
+    fun getQuakeLocation2(): String {
+        return mQuakeLocation2
+    }
+
+    fun getQuakeDetailsPage(): String {
+        return mQuakeDetailsPage
+    }
 }
